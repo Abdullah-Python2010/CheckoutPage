@@ -1,0 +1,207 @@
+:root{
+    --main-color: #ffc500;
+    --text-color: #333;
+}
+
+body, *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost';
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+h1{
+    font-size: 2.5rem;
+    margin-bottom: -30px;
+}
+
+h2{
+    font-size: 1.3rem;
+    margin: 30px 0 15px;
+}
+
+img{
+    width: 45%;
+    border-radius: 15px;
+}
+.container{
+    width: 80%;
+    margin: 5% auto;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4%;
+}
+
+.inputs{
+    flex-basis: 40%;
+}
+
+.items{
+    flex-basis: 40%;
+}
+
+.input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-box{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--text-color);
+    border-radius: 12px;
+}
+
+input[type = 'text']{
+    padding: 10px 20px;
+    border:  none; 
+    outline: none;
+    background: transparent;
+    width: 80%;
+    margin-right: auto;
+}
+
+i{
+    padding-left: 15px;
+}
+
+label:not(:last-child){
+    font-weight: bold;
+    margin: 5px 0;
+    font-size: 10px;
+}
+
+.last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last .input{
+    width: 48%;
+}
+
+
+
+
+button{
+    color: white;
+    background-color: var(--main-color);
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 0 0 auto;
+    display: block;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+button:hover{
+    filter: hue-rotate(7deg);
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 15px;
+    width: 40%;
+    gap: 20px;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+.item h2{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.item p{
+    word-spacing: 16px;
+}
+
+.item p span{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid var(--text-color);
+    border-radius: 10px; */
+    gap: 10px;
+}
+
+.buttons h2{
+    display: inline;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+}
+
+.item button{
+    background-color: #ccc;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+}
+.end{
+    display: flex;
+    border-top: 1px solid var(--text-color);
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    height: 40px;
+}
+
+
+
+.end h2{
+    font-weight: bold;
+}
+
+
+label:last-child, input[type = checkbox]{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+
+
+@media screen and (max-width: 840px){
+    .flexbox{
+        flex-direction: column-reverse;
+    }
+    .inputs, .items{
+        flex-basis: 80%;
+        margin: 50px auto;
+    }
+
+    .items{
+        width: 85%;
+    }
+    .inputs{
+        width: 90%;
+    }
+}
